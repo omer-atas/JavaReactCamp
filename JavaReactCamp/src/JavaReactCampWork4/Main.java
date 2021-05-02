@@ -8,14 +8,14 @@ public class Main {
 		Campaign campaign = new Campaign();
 		campaign.setId(1);
 		campaign.setCampaignName("Super Mayis Firsatlari");
-		campaign.setCampaignInfo("Oyun pinlerinde %70'e varan indirimler");
+		campaign.setCampaignInfo("Valorant");
 		
 		
 		CampaignManager campaignManager = new CampaignManager();
 		campaignManager.campaignAdd(campaign);
 		
 		
-		Player player = new Player();
+		Player player = new Player(); 
 		player.setId(1);
 		player.setIdentityNumber("11111111111");
 		player.setFirstName("Engin");
@@ -25,12 +25,11 @@ public class Main {
 		PlayerManager playerManager = new PlayerManager();
 		playerManager.userValidation(player);
 		playerManager.playerAdd(player);
-		
-	
-		Sale sale = new Sale(1,campaign,player);
+		playerManager.playerUpdate(player);
 		
 		SaleManager saleManager = new SaleManager();
 		saleManager.playerJoinCampaign(player, campaign);
+		saleManager.playerOutCampaign(player, campaign);
 		
 	}
 

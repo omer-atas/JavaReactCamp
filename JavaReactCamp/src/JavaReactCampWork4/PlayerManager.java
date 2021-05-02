@@ -24,13 +24,14 @@ public class PlayerManager implements PlayerServices,UserValidator {
 	@Override
 	public void playerUpdate(Player player) {
 		Utils.check();
-		System.out.println("Oyuncubilgilerini güncelliyor..");
+		System.out.println("Oyuncu bilgilerini güncelliyor..");
 		System.out.println(player.getFirstName() + " " + player.getLastName() + " isimli oyuncu bilgileri guncellendi ...");
 		
 	}
 
 	@Override
 	public void userValidation(Player player) {
+		System.out.println("Doðrulama gerçekleþtiriliyor..");
 		System.out.println(player.getFirstName() + " " + player.getLastName() + " adli oyuncunun e-devlet üzerinde doðrulamasý yapildi.");
 		sayac = sayac+1;
 		
