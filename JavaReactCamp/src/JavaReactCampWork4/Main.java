@@ -34,6 +34,7 @@ public class Main {
 		player2.setBirtDay("06.09.1999");
 		
 		PlayerManager playerManager2 = new PlayerManager();
+		playerManager2.userValidation(player2);
 		playerManager2.playerAdd(player2);
 		
 		Sale sale = new Sale(1,campaign,player);
