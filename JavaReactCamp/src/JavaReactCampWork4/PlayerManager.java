@@ -17,11 +17,6 @@ public class PlayerManager implements PlayerServices,UserValidator {
 		sayac--;
 		System.out.println(player.getFirstName() + " " + player.getLastName() + " isimli oyucu sistemden çikarildi..");
 		
-		player.setFirstName("");
-		player.setLastName("");
-		player.setBirtDay("");
-		player.setId(0);
-		player.setIdentityNumber(" ");
 		
 		if(sayac == 0) {
 			System.exit(0);
