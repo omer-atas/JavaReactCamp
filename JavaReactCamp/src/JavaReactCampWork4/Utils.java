@@ -6,9 +6,9 @@ public class Utils {
 			System.out.println("Ýslem gerceklestiriliyor..");
 			
 		}else if(PlayerManager.sayac <= 0){
-			System.exit(0);
-			System.out.println("Ýslem gerceklestirilemedi...");
 			
+			System.out.println("KUllanici bulanamadigi icin islem gerceklestirilemedi...");
+			System.exit(0);
 		}
 	}
 }

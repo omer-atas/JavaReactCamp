@@ -19,6 +19,7 @@ public class PlayerManager implements PlayerServices,UserValidator {
 		
 		
 		if(sayac == 0) {
+			System.out.println("Islem gerceklestirilemedi..");
 			System.exit(0);
 		}
 		
@@ -38,6 +39,7 @@ public class PlayerManager implements PlayerServices,UserValidator {
 		System.out.println("Doðrulama gerçekleþtiriliyor..");
 		System.out.println(player.getFirstName() + " " + player.getLastName() + " adli oyuncunun e-devlet üzerinde doðrulamasý yapildi.");
 		sayac++;
+		playerAdd(player);
 	}
 
 }
