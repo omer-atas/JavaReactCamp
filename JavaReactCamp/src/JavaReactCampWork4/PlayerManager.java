@@ -6,6 +6,7 @@ public class PlayerManager implements PlayerServices,UserValidator {
 	public void playerAdd(Player player) {
 		Utils.check();
 		System.out.println("Oyuncu sisteme kayit oluyor...");
+		sayac = sayac+1;
 		System.out.println(player.getFirstName() + " " + player.getLastName() + " isimli oyuncu sisteme kayit oldu ...");
 		
 	}
@@ -14,6 +15,7 @@ public class PlayerManager implements PlayerServices,UserValidator {
 	public void playerDelete(Player player) {
 		Utils.check();
 		System.out.println("Oyuncu sistemden siliniyor...");
+		sayac = sayac-1;
 		System.out.println(player.getFirstName() + " " + player.getLastName() + " isimli oyucu sistemden çikarildi..");
 		
 		

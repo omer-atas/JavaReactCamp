@@ -5,7 +5,7 @@ public class Utils {
 		if(PlayerManager.sayac != 0) {
 			System.out.println("Ýslem gerceklestiriliyor..");
 			PlayerManager.sayac = 0;
-		}else if(PlayerManager.sayac <= 0){
+		}else if(PlayerManager.sayac == 0){
 			System.out.println("Ýslem gerceklestirilemedi...");
 			System.exit(0);
 		}
