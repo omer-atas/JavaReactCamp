@@ -31,21 +31,7 @@ public class Player {
 
 	public void setIdentityNumber(String identityNumber) {
 		
-		if(identityNumber.length() > 11) {
-			System.out.println("Bu bir tc kimlik numarasý deðildir..");
-		}else {
-			
-			for(int i = 0 ; i < identityNumber.length() ; i ++) {
-				if((identityNumber.charAt(i) >= 'A' && identityNumber.charAt(i) <= 'Z') &&
-						(identityNumber.charAt(i) >= 'a' && identityNumber.charAt(i) <= 'z')) {
-					
-					System.out.println("Bu bir tc kimlik numarasý deðildir..");
-				}
-			}
-			
-			this.identityNumber = identityNumber;
-		}
-		
+		this.identityNumber = identityNumber;
 		
 	}
 

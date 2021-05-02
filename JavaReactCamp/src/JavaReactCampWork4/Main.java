@@ -5,6 +5,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Player player = new Player();
+		
 		player.setId(1);
 		player.setFirstName("Emre");
 		player.setLastName("DOGAN");
@@ -12,6 +13,7 @@ public class Main {
 		player.setIdentityNumber("11111111111");
 
 		PlayerManager playerManager = new PlayerManager();
+		
 		playerManager.userValidation(player);
 		playerManager.playerUpdate(player);
 		
