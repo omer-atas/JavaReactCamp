@@ -6,10 +6,9 @@ public class Utils {
 			System.out.println("Ýslem gerceklestiriliyor..");
 			
 		}else if(PlayerManager.sayac <= 0){
-			System.out.println("Ýslem gerceklestirilemedi...");
 			System.exit(0);
-		}else {
-			System.out.println("Sistemde herhangi bir kullanici bulunmamaktadir..");
+			System.out.println("Ýslem gerceklestirilemedi...");
+			
 		}
 	}
 }

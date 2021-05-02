@@ -6,7 +6,6 @@ public class PlayerManager implements PlayerServices,UserValidator {
 	public void playerAdd(Player player) {
 		Utils.check();
 		System.out.println("Oyuncu sisteme kayit oluyor...");
-		sayac = sayac+1;
 		System.out.println(player.getFirstName() + " " + player.getLastName() + " isimli oyuncu sisteme kayit oldu ...");
 		
 	}
@@ -15,8 +14,18 @@ public class PlayerManager implements PlayerServices,UserValidator {
 	public void playerDelete(Player player) {
 		Utils.check();
 		System.out.println("Oyuncu sistemden siliniyor...");
-		sayac = sayac-1;
+		sayac--;
 		System.out.println(player.getFirstName() + " " + player.getLastName() + " isimli oyucu sistemden çikarildi..");
+		
+		player.setFirstName("");
+		player.setLastName("");
+		player.setBirtDay("");
+		player.setId(0);
+		player.setIdentityNumber(" ");
+		
+		if(sayac == 0) {
+			System.exit(0);
+		}
 		
 		
 	}
@@ -33,8 +42,7 @@ public class PlayerManager implements PlayerServices,UserValidator {
 	public void userValidation(Player player) {
 		System.out.println("Doðrulama gerçekleþtiriliyor..");
 		System.out.println(player.getFirstName() + " " + player.getLastName() + " adli oyuncunun e-devlet üzerinde doðrulamasý yapildi.");
-		sayac = sayac+1;
-		
+		sayac++;
 	}
 
 }
